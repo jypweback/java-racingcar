@@ -2,13 +2,10 @@ package racing;
 
 public class RunningRacingGame {
     public static void main(String[] args) {
-        UserInputValueObject inputValueObject;
-        RacingGame racingGame;
-
         //사용자 입력값
-        inputValueObject = RacingGameInputView.takeUserInput();
+        UserInputValueObject inputValueObject = RacingGameInputView.takeUserInput();
         //레이싱게임 초기화
-        racingGame = new RacingGame(inputValueObject.getInputCarTime(),
+        RacingGame racingGame = new RacingGame(inputValueObject.getInputCarTime(),
                 inputValueObject.getInputCarNames());
 
         //게임시작
